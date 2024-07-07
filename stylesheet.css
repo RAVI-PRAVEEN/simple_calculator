@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-bg : black;
+    --calcy-bg : #212121;
+    --symbol-bg :rgb(239, 167, 65);
+    --input-bg : rgb(219, 152, 58);
+    --input-bg2 : rgb(171, 120, 30);
+    --numbtn-bg: rgb(51,51,51);
+    --evalbtn-bg :rgb(202, 192, 192);
+}
+
+body{
+    background-color: var(--body-bg);
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+table{
+    background-color: var(--calcy-bg);
+    padding: 5px;
+    margin: 100px auto;
+    border: none;
+    border-radius: 25px;
+}
+
+#input{
+    width: 350px;
+    background-color: var(--input-bg);
+    height: 80px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 40px;
+    text-align: right;
+    color: aliceblue;
+    transition: all ease 0.2s;
+
+}
+
+
+::placeholder{
+    color: aliceblue;
+}
+
+.numBtn, .symbols, .eval{
+    padding: 1rem;
+    border: none;
+    width: 60px;
+    border-radius: 100%;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 1px 1px #6a6969;
+
+}
+
+
+tr{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+    margin: 0.5rem;
+}
+
+td>input:hover{
+    opacity: calc(70%);
+}
+
+.symbols{
+    color: aliceblue;
+    font-weight: 400;
+    background: var(--symbol-bg);
+    box-shadow: 1px 1px #ffffff;
+}
+
+.numBtn{
+    color: white;
+    background-color: var(--numbtn-bg);
+    font-size: 25px;
+}
+
+.eval{ 
+    background-color: var(--evalbtn-bg);
+}
